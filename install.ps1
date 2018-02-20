@@ -5,6 +5,3 @@ Get-ChildItem ".\ahk-scripts" -Filter *.ahk |
     $targetPath = [io.path]::combine($startupPath, $_.Name + ".ln")
     New-Item -Path $targetPath -ItemType SymbolicLink -Value $_.FullName -Force 
 }
-
-Write-Host -NoNewLine 'Press any key to continue...';
-$null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
