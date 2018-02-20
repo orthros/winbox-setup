@@ -1,0 +1,3 @@
+# windows-autohotkey
+
+My autohotkey scripts. Mainly to keep things running like i3....
